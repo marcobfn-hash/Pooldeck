@@ -60,6 +60,74 @@
     .project-photo { width:100%; height:100%; object-fit:cover; transition:transform .7s cubic-bezier(.2,.7,.2,1), filter .7s ease; }
     .project-card:hover .project-photo { transform:scale(1.045); }
     .photo-frame { background:#eef1f3; overflow:hidden; }
+
+    /* =========================================================
+       PALETA — RITMO DE COLOR PREMIUM
+       Se incorporan bloques azules puntuales para evitar una
+       lectura demasiado pálida, manteniendo el carácter sobrio.
+       ========================================================= */
+    #solucion {
+      background:#0A2540 !important;
+      color:#fff;
+    }
+    #solucion h2,
+    #solucion h3 {
+      color:#fff !important;
+    }
+    #solucion p:not(.text-gold) {
+      color:rgba(255,255,255,.72);
+    }
+    #solucion .text-gold {
+      color:#C9A86A !important;
+    }
+    #solucion .card {
+      background:rgba(255,255,255,.055);
+      border-color:rgba(255,255,255,.14);
+      box-shadow:none;
+    }
+    #solucion .card p {
+      color:rgba(255,255,255,.68) !important;
+    }
+    #solucion .card .bg-navy {
+      background:#C9A86A !important;
+      color:#0A2540 !important;
+    }
+
+    /* Un azul muy suave entre bloques para mantener respiración visual. */
+    #sistemas {
+      background:#F7FAFC !important;
+    }
+
+    #proceso {
+      background:#1E4A6E !important;
+      color:#fff;
+    }
+    #proceso h2,
+    #proceso h3 {
+      color:#fff !important;
+    }
+    #proceso p:not(.text-gold) {
+      color:rgba(255,255,255,.72);
+    }
+    #proceso .text-gold {
+      color:#C9A86A !important;
+    }
+    #proceso .timeline-line::before {
+      background:rgba(255,255,255,.24);
+    }
+    #proceso .bg-navy {
+      background:#fff !important;
+      color:#0A2540 !important;
+    }
+    #proceso .bg-gold {
+      background:#C9A86A !important;
+      color:#0A2540 !important;
+    }
+
+    /* FAQ: apenas teñido de azul, no otro bloque oscuro. */
+    #faq {
+      background:#F5F9FC !important;
+    }
   </style>
 </head>
 <body>
@@ -202,7 +270,7 @@
     <!-- 6. NOSOTROS -->
     <section id="nosotros" class="py-20 md:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <div class="photo-frame rounded-3xl min-h-[420px] reveal shadow-sm">
+        <div class="photo-frame rounded-3xl aspect-[16/9] reveal shadow-sm">
           <!-- Reemplazar por una fotografía propia del taller/fundador cuando esté disponible. -->
           <img class="project-photo" src="fotos/foto-2.jpg" alt="Estructura metálica de una plataforma móvil para piscina">
         </div>
